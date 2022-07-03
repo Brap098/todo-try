@@ -6,13 +6,13 @@ router.get('/', (req, res) => {
         city: 'clayton',
         state: 'NC',
         cuisines: 'BBQ, Ribs, Chicken, ETC',
-        pic: 'public\images\JTop_s-logo-greyscale-white.png'
+        pic: '/images/JTop_s-logo-greyscale-white.png'
       }, {
           name: 'fivestarraleigh',
           city: 'Raleigh',
           state: 'NC',
           cuisines: 'chinese, drinks',
-          pic: 'public\images\81806fivestar_logo.png'
+          pic: '/images/81806fivestar_logo.png'
       }]
       
     res.render('places/index', {places})
