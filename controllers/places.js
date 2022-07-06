@@ -36,6 +36,20 @@ router.post('/', (req, res) => {
     }
   })
   
+  router.delete('/places/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+      res.render('error404')
+    }
+    else if (!places[id]) {
+      res.render('error404')
+    }
+    else {
+        places.splice(id, 1)
+      res.send('/places')
+    }
+  })
+  
 
 router.get('/new', (req, res) => {
     res.render('places/new')
