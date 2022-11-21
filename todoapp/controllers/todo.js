@@ -18,6 +18,13 @@ router.get('/', (req, res) => {
       
     res.render('todo/index', {todo})
   })
+
+
+  
+
+  router.get('/new', (req, res) => {
+    res.render('todo/new')
+})
   
 
 module.exports = router
