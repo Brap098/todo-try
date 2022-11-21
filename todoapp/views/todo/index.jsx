@@ -2,22 +2,30 @@ const React = require('react')
 const Def = require('../default')
 
 function index (data) {
-    let placesFormatted = data.places.map((place) => {
+    let todoFormatted = data.todo.map((todo) => {
+        return (
+          <div className="col-sm-6">
+            <h2>{todo.name}</h2>
+            <p clasName="text-center">
+              {todo.cuisines}
+            </p>
+            <img src={place.pic} alt={todo.name} />
+            <p clasName="text-center">
+              Located in {todo.city}, {todo.state}
+            </p>
+          </div>
+        )
+      })
       return (
-        <div>
-          <h2>{place.name}</h2>
-          <img src={place.pic} alt={place.name} />
-        </div>
-      )
-    })
-    return (
-      <Def>
-          <main>
-              <h1>Places to Rant or Rave About</h1>
-                {placesFormatted}
-          </main>
-      </Def>
+        <Def>
+            <main>
+                <h1>POST-It</h1>
+                <div className='row'>
+                {todoFormatted}
+                </div>
+            </main>
+        </Def>
     )
-  }
+    }
   
 module.exports = index
