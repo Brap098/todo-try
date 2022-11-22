@@ -77,7 +77,7 @@ router.get('/:id/edit', (req, res) => {
         res.render('error404')
     }
     else {
-      res.render('todos/edit', { todo: todos[id] })
+      res.render('todos/edit', { todos: todos[id] })
     }
   })
   
