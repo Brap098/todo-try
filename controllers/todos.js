@@ -61,9 +61,23 @@ router.delete('/places/:id', (req, res) => {
             req.body.state = 'USA'
         }
   
-        // Save the new data into places[id]
+        // Save new data into todos[id]
         todos[id] = req.body
         res.redirect(`/todos/${id}`)
+    }
+  })
+  
+  router.get('/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+      res.render('error404')
+    }
+    else if (!todos[id]) {
+      res.render('error404')
+    }
+    else {
+      res.render('todos/show', { todos: todos[id], id })
+
     }
   })
   
@@ -81,6 +95,7 @@ router.get('/:id/edit', (req, res) => {
     }
   })
   
+
   
 
 module.exports = router
