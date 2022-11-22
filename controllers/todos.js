@@ -76,7 +76,7 @@ router.delete('/places/:id', (req, res) => {
       res.render('error404')
     }
     else {
-      res.render('todos/show', { todos: todos[id], id })
+      res.render('todos/show', { todo: todos[id], id })
 
     }
   })

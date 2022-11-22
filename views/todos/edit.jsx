@@ -37,7 +37,7 @@ function edit_form (data) {
         </Def>
     )
 }
-router.get('/:id/edit', (req, res) => {
+/*router.get('/:id/edit', (req, res) => {
     let id = Number(req.params.id)
     if (isNaN(id)) {
         res.render('error404')
@@ -48,7 +48,7 @@ router.get('/:id/edit', (req, res) => {
     else {
       res.render('todos/edit', { todo: todos[id] })
     }
-  })
+  })*/
   
   
 module.exports = edit_form

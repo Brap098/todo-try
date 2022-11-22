@@ -5,7 +5,10 @@ function show (data) {
     return (
         <Def>
           <main>
-            <h1>{ data.todos.name }</h1>
+            <h1>{ data.todo.name }</h1>
+
+
+            
             <a href={`/todos/${data.id}/edit`} className="btn btn-warning"> 
               Edit
             </a>  
