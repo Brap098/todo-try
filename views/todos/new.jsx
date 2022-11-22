@@ -16,16 +16,12 @@ function new_form () {
                     <input className="form-control" id="pic" name="pic" />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="city">City</label>
-                    <input className="form-control" id="city" name="city" />
+                    <label htmlFor="list">list</label>
+                    <input className="form-control" id="list" name="list" />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="state">State</label>
-                    <input className="form-control" id="state" name="state" />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="cuisines">Cuisines</label>
-                    <input className="form-control" id="cuisines" name="cuisines" required />
+                    <label htmlFor="user">User</label>
+                    <input className="form-control" id="user" name="user" />
                 </div>
                 <input className="btn btn-primary" type="submit" value="Add Todo" />
             </form>

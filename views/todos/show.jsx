@@ -6,9 +6,11 @@ function show (data) {
         <Def>
           <main>
             <h1>{ data.todo.name }</h1>
+            <img src={ data.todo.pic } />
+            <p>{ data.todo.list }</p>
+            <h3>{ data.todo.user }</h3>
 
 
-            
             <a href={`/todos/${data.id}/edit`} className="btn btn-warning"> 
               Edit
             </a>  
@@ -24,3 +26,5 @@ function show (data) {
 }
 
 module.exports = show
+
+
