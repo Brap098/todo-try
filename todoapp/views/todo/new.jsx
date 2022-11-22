@@ -7,27 +7,27 @@ function new_form () {
           <main>
             <h1>Add a New Todo Liste</h1>
             <form method="POST" action="/todo">
-                <div>
+                <div className="form-group">
                     <label htmlFor="user">Username</label>
-                    <input id="user" name="user" required/>
+                    <input className="form-control" id="user" name="user" required/>
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="catigory">catigory</label>
-                    <input id="catigory" name="catigory" />
+                    <input className="form-control" id="catigory" name="catigory" />
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="title">Todo Title</label>
-                    <input id="title" name="title" />
+                    <input className="form-control" id="title" name="title" />
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="pic">Todo Pic</label>
-                    <input type="url" id="pic" name="pic" />
+                    <input className="form-control" type="url" id="pic" name="pic" />
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="list">Todo</label>
-                    <input id="list" name="list" />
+                    <input className="form-control" id="list" name="list" />
                 </div>
-                <input type="submit" value="Add Todo" />
+                <input className="btn btn-primary" type="submit" value="Add Todo" />
             </form>
 
           </main>
