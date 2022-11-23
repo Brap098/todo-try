@@ -9,13 +9,14 @@ function index (data) {
           <a href={`/todos/${todo.id}`}>
           {todo.name}
           </a>
-        </h2>
-        <p clasName="text-center">
-          {todo.cuisines}
+          </h2>
+          <img src={todo.pic} alt={todo.name} />
+        
+        <p className="text-center">
+        Todo: {todo.list}
         </p>
-        <img src={todo.pic} alt={todo.name} />
-        <p clasName="text-center">
-          Located in {todo.city}, {todo.state}
+        <p className="text-center">
+          {todo.user}
         </p>
       </div>
     )

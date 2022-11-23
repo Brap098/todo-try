@@ -16,7 +16,7 @@ function show (data) {
             </a>  
             <form method="POST" action={`/todos/${data.id}?_method=DELETE`}> 
               <button type="submit" className="btn btn-danger">
-                Delete
+                Complete!
               </button>
             </form>     
 
