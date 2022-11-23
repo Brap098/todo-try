@@ -65,12 +65,21 @@ router.delete('/:id', (req, res) => {
 router.get('/:id/edit', (req, res) => {
   db.Todo.findById(req.params.id)
   .then(todo => {
-    res.render('posts/edit', {todo})
+    res.render('todos/edit', {todo})
   })
   .catch(err => {
     res.render('error404')
   })
 })
 
+router.get('/:id/add', (req, res) => {
+  db.Todo.findById(req.params.id)
+  .then(todo => {
+    res.render('todos/add', {todo})
+  })
+  .catch(err => {
+    res.render('error404')
+  })
+})
 
 module.exports = router
